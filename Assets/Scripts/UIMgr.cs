@@ -7,7 +7,7 @@ public class UIMgr: MonoBehaviour
     public static UIMgr I;
     public UI_StartScene ui_startScene;
     public UI_Office ui_office;
-
+    public UI_Peputation ui_peputation;
 
 
     private void Awake()
@@ -15,7 +15,7 @@ public class UIMgr: MonoBehaviour
         I = this; 
         ui_startScene.Init();
         ui_office.Init();
-
+        ui_peputation.Init();
 
 
     }
