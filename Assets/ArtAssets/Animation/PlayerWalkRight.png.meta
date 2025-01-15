@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ecfea6766b77bca4b99dfa6fb4e4fcf2
+guid: e54724eaf7720b349bf338524b7a5acb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_1_0
+      name: PlayerWalkRight_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 340.5
-        height: 665
+        width: 400
+        height: 683
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc601a86d88df5b4ca679dff127598b4
-      internalID: -806147489
+      spriteID: c04c4d2870d70f646bed0cc5c94c7044
+      internalID: 180380361
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_1
+      name: PlayerWalkRight_1
       rect:
         serializedVersion: 2
-        x: 340
+        x: 399
         y: 0
-        width: 340.5
-        height: 665
+        width: 399.85715
+        height: 683
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,113 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec35a18570d3e4244aa74fa998bf39d5
-      internalID: -1697326388
+      spriteID: 2fa0d11261325c84989079ab954a286e
+      internalID: 887745080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkRight_2
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 0
+        width: 399.85715
+        height: 683
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0220d60e7163c1b428ba3a4304eef629
+      internalID: -167826827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkRight_3
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 0
+        width: 399.85715
+        height: 683
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d083eadfe00324d8ab8d7eb92ec9e5
+      internalID: 1576944659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkRight_4
+      rect:
+        serializedVersion: 2
+        x: 1596
+        y: 0
+        width: 399.85715
+        height: 683
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e3b1c991e9a9245b736e7007ca8c23
+      internalID: -1510230765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkRight_5
+      rect:
+        serializedVersion: 2
+        x: 1997
+        y: 0
+        width: 400
+        height: 683
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c82681c37645e9941836c1cf9ff9ce41
+      internalID: 1181552095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerWalkRight_6
+      rect:
+        serializedVersion: 2
+        x: 2394
+        y: 0
+        width: 399.85715
+        height: 683
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7079b5399995f6147bb6caaf7389ad5e
+      internalID: -509576002
       vertices: []
       indices: 
       edges: []
@@ -157,8 +262,13 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC_1_1: -1697326388
-      NPC_1_0: -806147489
+      PlayerWalkRight_4: -1510230765
+      PlayerWalkRight_3: 1576944659
+      PlayerWalkRight_1: 887745080
+      PlayerWalkRight_2: -167826827
+      PlayerWalkRight_6: -509576002
+      PlayerWalkRight_0: 180380361
+      PlayerWalkRight_5: 1181552095
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

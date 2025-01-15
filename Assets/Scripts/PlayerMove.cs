@@ -7,7 +7,7 @@ using static UnityEngine.RuleTile.TilingRuleOutput;
 public class PlayerMove : MonoBehaviour
 {
     public float speed;
-    public Animator anim;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -20,21 +20,11 @@ public class PlayerMove : MonoBehaviour
     void Update()
     {
         //Input two axises.
-        Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
-        //-1,   0,    +1
-        if (horizontal.x < 0)
-        {
-            transform.rotation = new Quaternion(0, -180, 0, 0);
-        }
-        if (horizontal.x > 0)
-        {
-            transform.rotation = new Quaternion(0, 0, 0, 0);
+        animator.SetFloat("horizontal", Input.GetAxis("Horizontal"));
 
-        }
+
+        Vector3 horizontal = new Vector3(Input.GetAxis("Horizontal"), 0f, 0f);
         transform.position = transform.position + horizontal * Time.deltaTime * speed;
-        if (horizontal.x > -0.01f && horizontal.x < 0.01f)
-        {
-            anim.enabled = false;
-        }
+
     }
 }

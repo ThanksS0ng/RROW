@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ecfea6766b77bca4b99dfa6fb4e4fcf2
+guid: 32b2b0f5fef5d3d43ad498d41eaace13
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: NPC_1_0
+      name: PlayerldleLeft_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 340.5
-        height: 665
+        width: 388
+        height: 683
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc601a86d88df5b4ca679dff127598b4
-      internalID: -806147489
+      spriteID: e3ba50af74fe330459079e7cc38edd3c
+      internalID: -1810094428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NPC_1_1
+      name: PlayerldleLeft_1
       rect:
         serializedVersion: 2
-        x: 340
+        x: 388
         y: 0
-        width: 340.5
-        height: 665
+        width: 388
+        height: 683
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ec35a18570d3e4244aa74fa998bf39d5
-      internalID: -1697326388
+      spriteID: 7bd555871c9aac048aea26f0c4b209b0
+      internalID: 1097688174
       vertices: []
       indices: 
       edges: []
@@ -157,8 +157,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      NPC_1_1: -1697326388
-      NPC_1_0: -806147489
+      PlayerldleLeft_0: -1810094428
+      PlayerldleLeft_1: 1097688174
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
