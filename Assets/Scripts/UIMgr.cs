@@ -8,6 +8,7 @@ public class UIMgr: MonoBehaviour
     public UI_StartScene ui_startScene;
     public UI_Office ui_office;
     public UI_Reputation ui_peputation;
+    public UI_TownMap ui_townMap;
 
 
     private void Awake()
@@ -16,7 +17,7 @@ public class UIMgr: MonoBehaviour
         ui_startScene.Init();
         ui_office.Init();
         ui_peputation.Init();
-
+        ui_townMap.Init();
 
     }
 

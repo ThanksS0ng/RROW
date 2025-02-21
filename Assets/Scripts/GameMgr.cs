@@ -6,14 +6,23 @@ public class GameMgr : MonoBehaviour
 {
     public static GameMgr I;
 
+    public PlayerMove player;
+    public CameraMove cameraMove;
+
     public Office office;
+    public Cafe cafe;
+
     //add new scene objects...
 
     private void Awake() 
     {
         I = this;
 
+        player.Init();
+        cameraMove.Init();
+
         office.Init();
+        cafe.Init();
 
 
 
