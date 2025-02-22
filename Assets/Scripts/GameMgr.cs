@@ -12,6 +12,11 @@ public class GameMgr : MonoBehaviour
     public Office office;
     public Cafe cafe;
 
+
+    public bool isCafe;
+    public bool isOffice;
+
+
     //add new scene objects...
 
     private void Awake() 

@@ -4,16 +4,37 @@ using UnityEngine;
 
 public class CameraMove : MonoBehaviour
 {
-    public void Init() 
+    public void Init()
     {
 
     }
 
-    public void Follow() 
+    private void Update()
     {
-        this.transform.SetParent(GameMgr.I.player.transform);
+        if (GameMgr.I.isCafe)
+        {
+            Camera.main.transform.position = new Vector3(GameMgr.I.player.transform.position.x, 0, -10);
+            if (transform.position.x < GameMgr.I.cafe.leftCameraPos.x)
+            {
+                transform.position = GameMgr.I.cafe.leftCameraPos;
+            }
+            if (transform.position.x > GameMgr.I.cafe.rightCameraPos.x)
+            {
+                transform.position = GameMgr.I.cafe.rightCameraPos;
+            }
+        }
+       
     }
-    public void UnFollow() 
+
+    public void SetPosition()
+    {
+
+    }
+    public void Follow()
+    {
+
+    }
+    public void UnFollow()
     {
         this.transform.SetParent(null);
     }

@@ -14,6 +14,8 @@ public class Office : MonoBehaviour
     {
         GameMgr.I.player.SetPosition(playerSpawnPosition);
         gameObject.SetActive(true);
+        GameMgr.I.isOffice = true;
+        Camera.main.transform.position = new Vector3(0, 0, -10);
     }
     public void Hide()
     {

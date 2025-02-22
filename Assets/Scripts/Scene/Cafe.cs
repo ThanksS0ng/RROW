@@ -7,11 +7,21 @@ public class Cafe : MonoBehaviour
     public CharacterInteractive characterInteractive;
     public Vector2 playerSpawnPosition;
 
+    public float leftBoundary_X;
+    public float rightBoundary_X;
+
+    [HideInInspector]
+    public Vector3 leftCameraPos;
+    [HideInInspector]
+    public Vector3 rightCameraPos;
 
     public void Init()
     {
         Hide();
         characterInteractive.Init();
+
+        leftCameraPos = new Vector3(leftBoundary_X, 0, -10);
+        rightCameraPos = new Vector3(rightBoundary_X, 0, -10);
     }
 
     public void Show()
@@ -19,10 +29,12 @@ public class Cafe : MonoBehaviour
         GameMgr.I.player.SetPosition(playerSpawnPosition);
         GameMgr.I.cameraMove.Follow();
         gameObject.SetActive(true);
+        GameMgr.I.isCafe = true;
     }
     public void Hide()
     {
         gameObject.SetActive(false);
         GameMgr.I.cameraMove.UnFollow();
+        GameMgr.I.isCafe = false;
     }
 }

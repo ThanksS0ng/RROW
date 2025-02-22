@@ -9,6 +9,7 @@ public class UIMgr: MonoBehaviour
     public UI_Office ui_office;
     public UI_Reputation ui_peputation;
     public UI_TownMap ui_townMap;
+    public UI_Chat ui_chat;
 
 
     private void Awake()
@@ -18,6 +19,7 @@ public class UIMgr: MonoBehaviour
         ui_office.Init();
         ui_peputation.Init();
         ui_townMap.Init();
+        ui_chat.Init();
 
     }
 
