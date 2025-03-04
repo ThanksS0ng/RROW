@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Converters;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Cafe : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class Cafe : MonoBehaviour
     public Vector3 leftCameraPos;
     [HideInInspector]
     public Vector3 rightCameraPos;
+
+    public bool canChat = false;
 
     public void Init()
     {
@@ -36,5 +40,14 @@ public class Cafe : MonoBehaviour
         gameObject.SetActive(false);
         GameMgr.I.cameraMove.UnFollow();
         GameMgr.I.isCafe = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyUp(KeyCode.E) && canChat)
+        {
+            canChat = false;
+            UI_Chat.I.StartPresentlines("Cafe_1and2");
+        }
     }
 }

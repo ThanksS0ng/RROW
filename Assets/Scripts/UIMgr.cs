@@ -10,7 +10,7 @@ public class UIMgr: MonoBehaviour
     public UI_Reputation ui_peputation;
     public UI_TownMap ui_townMap;
     public UI_Chat ui_chat;
-
+    public UI_CharacterImgLib ui_CharacterImgLib;
 
     private void Awake()
     {
@@ -20,6 +20,7 @@ public class UIMgr: MonoBehaviour
         ui_peputation.Init();
         ui_townMap.Init();
         ui_chat.Init();
+        ui_CharacterImgLib.Init(); 
 
     }
 

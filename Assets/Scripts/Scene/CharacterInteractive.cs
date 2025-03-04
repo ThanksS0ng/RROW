@@ -16,10 +16,12 @@ public class CharacterInteractive : MonoBehaviour
     public void ShowChatImg() 
     {
         chatBtnImg.SetActive(true);
+        GameMgr.I.cafe.canChat = true;
     }
     public void HideChatImg() 
     {
         chatBtnImg.SetActive(false);
+        GameMgr.I.cafe.canChat = false;
     }
 
     // Start is called before the first frame update
