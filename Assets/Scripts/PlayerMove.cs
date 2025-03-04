@@ -62,6 +62,11 @@ public class PlayerMove : MonoBehaviour
             UIMgr.I.ui_office.ShowBtnLeave();
         }
 
+        if (collision.gameObject.name == "CafeWall_L")
+        {
+            UIMgr.I.ui_cafe.ShowBtnLeave();
+        }
+
     }
     public void OnCollisionExit2D(Collision2D collision)
     {
@@ -69,6 +74,11 @@ public class PlayerMove : MonoBehaviour
         if (collision.gameObject.name == "OfficeWall_R")
         {
             UIMgr.I.ui_office.HideBtnLeave();
+        }
+
+        if (collision.gameObject.name == "CafeWall_L")
+        {
+            UIMgr.I.ui_cafe.HideBtnLeave();
         }
 
     }

@@ -11,6 +11,9 @@ public class UIMgr: MonoBehaviour
     public UI_TownMap ui_townMap;
     public UI_Chat ui_chat;
     public UI_CharacterImgLib ui_CharacterImgLib;
+    public UI_Tips ui_tips;
+    public UI_Cafe ui_cafe;
+
 
     private void Awake()
     {
@@ -21,6 +24,9 @@ public class UIMgr: MonoBehaviour
         ui_townMap.Init();
         ui_chat.Init();
         ui_CharacterImgLib.Init(); 
+        ui_tips.Init();
+        ui_cafe.Init();
+        
 
     }
 

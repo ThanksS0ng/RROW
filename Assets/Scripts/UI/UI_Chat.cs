@@ -59,6 +59,7 @@ public class UI_Chat : MonoBehaviour
         if (strArray[0] == "*e")
         {
             Hide();
+            UIMgr.I.ui_tips.AnimShow();
             return;
         }
         //Set Character Image.

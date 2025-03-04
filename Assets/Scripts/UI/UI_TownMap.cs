@@ -37,6 +37,9 @@ public class UI_TownMap : MonoBehaviour
         btn_Newsroom.onClick.AddListener(() =>
         {
             HideTownMap();
+            GameMgr.I.cafe.Hide();
+            UIMgr.I.ui_cafe.Hide();
+            GameMgr.I.office.Show_BackOffice();
         });
     }
 

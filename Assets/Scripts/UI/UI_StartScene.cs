@@ -19,7 +19,7 @@ public class UI_StartScene : MonoBehaviour
         btn_NewGame.onClick.AddListener(() =>
         {
             Hide();
-            GameMgr.I.office.Show();
+            GameMgr.I.office.Show_Init();
             UIMgr.I.ui_office.Show();
 
         });
