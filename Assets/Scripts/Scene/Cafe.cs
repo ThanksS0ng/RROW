@@ -47,7 +47,7 @@ public class Cafe : MonoBehaviour
         if (Input.GetKeyUp(KeyCode.E) && canChat)
         {
             canChat = false;
-            UI_Chat.I.StartPresentlines("Cafe_1and2");
+            UI_Chat.I.StartPresentlines("cafe_1and2");
         }
     }
 }

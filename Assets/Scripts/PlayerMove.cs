@@ -45,10 +45,20 @@ public class PlayerMove : MonoBehaviour
             var ci = collision.GetComponent<CharacterInteractive>();
             ci.ShowChatImg();
         }
+        if (collision.gameObject.name == "NPC_colleague")
+        {
+            var ci = collision.GetComponent<CharacterInteractive>();
+            ci.ShowChatImg();
+        }
     }
     public void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.gameObject.name == "NPC_1and2")
+        {
+            var ci = collision.GetComponent<CharacterInteractive>();
+            ci.HideChatImg();
+        }
+        if (collision.gameObject.name == "NPC_colleague")
         {
             var ci = collision.GetComponent<CharacterInteractive>();
             ci.HideChatImg();

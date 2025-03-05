@@ -28,7 +28,7 @@ public class UI_Chat : MonoBehaviour
 
     private void Awake()
     {
-        //TryGetComponent<TMP_Text>(out m_text);
+
     }
     private void Start()
     {
@@ -59,13 +59,25 @@ public class UI_Chat : MonoBehaviour
         if (strArray[0] == "*e")
         {
             Hide();
-            UIMgr.I.ui_tips.AnimShow();
+            if (strArray[1] == "0" || strArray[1] == string.Empty)
+            {
+
+            }
+            if (strArray[1] == "1")
+            {
+                UIMgr.I.ui_tips.AnimShowOne();
+            }
+            if (strArray[1] == "2")
+            {
+                UIMgr.I.ui_tips.AnimShowTwo();
+            }
+
             return;
         }
         //Set Character Image.
-        if (strArray[0]=="t")
+        if (strArray[0] == "t")
         {
-            characterImg.sprite= UIMgr.I.ui_CharacterImgLib.GetCharacterImg(strArray[1]);
+            characterImg.sprite = UIMgr.I.ui_CharacterImgLib.GetCharacterImg(strArray[1]);
 
         }
 
@@ -115,7 +127,7 @@ public class UI_Chat : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void SetCharacterImg() 
+    private void SetCharacterImg()
     {
 
     }

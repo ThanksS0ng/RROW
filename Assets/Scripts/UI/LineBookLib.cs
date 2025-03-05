@@ -6,14 +6,15 @@ public class LineBookLib : MonoBehaviour
 {
     Dictionary<string, List<string>> dic = new Dictionary<string, List<string>>();
 
-    public List<string> Cafe_1and2 = new List<string>();
-
+    public List<string> cafe_1and2 = new List<string>();
+    public List<string> office_Colleague = new List<string>();
 
 
 
     public void Init()
     {
-        dic.Add("Cafe_1and2", Cafe_1and2);
+        dic.Add("cafe_1and2", cafe_1and2);
+        dic.Add("office_Colleague", office_Colleague);
 
 
     }
